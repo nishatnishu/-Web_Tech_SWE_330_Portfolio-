@@ -874,7 +874,61 @@ body.light-theme { --accent-color-rgb: 52, 152, 219; }
     margin-bottom: 0;
     color: var(--text-color-secondary);
 }
+/* CV Button Container */
+.cv-btn-container {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
 
+/* Elegant Button Styles */
+.view-cv-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 50px;
+    text-decoration: none;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+.view-cv-btn i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.view-cv-btn span {
+    position: relative;
+    z-index: 2;
+}
+
+/* Hover Effect */
+.btn-hover-effect {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+.view-cv-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.view-cv-btn:hover .btn-hover-effect {
+    left: 0;
+}
 /* Education Section */
 .education-section {
     background: linear-gradient(135deg, 
