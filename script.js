@@ -1,30 +1,50 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   /* =========================================================
+     Elegant "pop" feedback animation when a skill/tool tag
+     is clicked or activated via keyboard
+     ========================================================= */
+  function popTag(tag) {
+    if (!tag) return;
+    tag.classList.remove('tag-pop');
+    void tag.offsetWidth; // restart animation if clicked again quickly
+    tag.classList.add('tag-pop');
+    tag.addEventListener('animationend', () => tag.classList.remove('tag-pop'), { once: true });
+  }
+  document.addEventListener('click', (e) => {
+    const tag = e.target.closest('.tag');
+    if (tag) popTag(tag);
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const tag = e.target.closest && e.target.closest('.tag');
+    if (tag) { popTag(tag); }
+  });
+
+  /* =========================================================
      Hero particle background
      ========================================================= */
   const reduceMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!reduceMotionQuery && typeof particlesJS !== 'undefined' && document.getElementById('particles-js')) {
     particlesJS('particles-js', {
       particles: {
-        number: { value: 60, density: { enable: true, value_area: 800 } },
-        color: { value: '#C9A15A' },
+        number: { value: 60, density: { enable: true, value_area: 1000 } },
+        color: { value: ['#8B6FF0', '#5A8DF0', '#D66BC0', '#E4C27E'] },
         shape: { type: 'circle' },
-        opacity: { value: 0.45, random: true, anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false } },
-        size: { value: 3, random: true },
-        line_linked: { enable: true, distance: 150, color: '#C9A15A', opacity: 0.25, width: 1 },
-        move: { enable: true, speed: 1, direction: 'none', random: true, straight: false, out_mode: 'out' }
+        opacity: { value: 0.36, random: true, anim: { enable: true, speed: 0.7, opacity_min: 0.08, sync: false } },
+        size: { value: 2.4, random: true },
+        line_linked: { enable: true, distance: 150, color: '#8B6FF0', opacity: 0.12, width: 1 },
+        move: { enable: true, speed: 0.55, direction: 'none', random: true, straight: false, out_mode: 'out' }
       },
       interactivity: {
-        detect_on: 'canvas',
+        detect_on: 'window',
         events: {
           onhover: { enable: true, mode: 'grab' },
-          onclick: { enable: true, mode: 'push' },
+          onclick: { enable: false },
           resize: true
         },
         modes: {
-          grab: { distance: 140, line_linked: { opacity: 0.6 } },
-          push: { particles_nb: 4 }
+          grab: { distance: 140, line_linked: { opacity: 0.35 } }
         }
       },
       retina_detect: true
