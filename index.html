@@ -1,498 +1,814 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishat Tasnim Nishu - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nishat Tasnim Nishu | Software Engineering Student &amp; Developer</title>
+<meta name="description" content="Portfolio of Nishat Tasnim Nishu, a Software Engineering student at SUST interested in full-stack development, mobile applications, and machine learning research.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nishat Tasnim Nishu | Software Engineering Student & Developer">
+<meta property="og:description" content="Software Engineering student at SUST building full-stack and mobile applications, and exploring machine learning research.">
+<meta property="og:url" content="https://nishattasnim-portfolio.netlify.app/">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23090C11'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Space Grotesk, sans-serif' font-weight='700' fill='%23C9A15A' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Header Section -->
-    <header class="header">
-        <nav class="navbar container">
-            <a href="#home" class="logo">
-                <span class="logo-first">Nishat</span><span class="logo-dot">.</span>
-            </a>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="theme-toggle" aria-label="Toggle Light/Dark Mode">
-                <i class="fas fa-sun theme-icon sun-icon"></i>
-                <i class="fas fa-moon theme-icon moon-icon"></i>
-            </div>
-            <div class="burger" aria-label="Open navigation menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Scroll Progress Indicator -->
-    <div class="scroll-progress-container">
-        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
-    </div>
-
-    <!-- Hero Section (Home) -->
-    <section id="home" class="page-section hero-section">
-        <div id="particles-js"></div>
-        <div class="container hero-content">
-            <div class="hero-text reveal-left">
-                <p class="greeting">Hello, I'm</p>
-                <h1>Nishat Tasnim Nishu</h1>
-                <div class="animated-roles">
-                    <span class="role-text"></span>
-                    <span class="cursor-typing">|</span>
-                </div>
-                <p class="description">
-                    A Software Engineering student dedicated to crafting elegant, efficient, and user-focused digital
-                    solutions. I thrive on bringing innovative ideas to life through code.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary pulse">View My Work <i
-                            class="fas fa-arrow-right"></i></a>
-                    <a href="#contact" class="btn btn-secondary">Let's Connect <i class="fas fa-paper-plane"></i></a>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/nishatnishu" target="_blank" aria-label="GitHub"><i
-                            class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/yourlinkedinprofile" target="_blank" aria-label="LinkedIn"><i
-                            class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com/yourtwitterprofile" target="_blank" aria-label="Twitter"><i
-                            class="fab fa-twitter"></i></a>
-                    <a href="https://facebook.com/yourfacebookprofile" target="_blank" aria-label="Facebook">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image reveal-right">
-                <img src="images/profile.jpg" alt="Nishat Tasnim Nishu Profile Photo">
-                <div class="blob-shape-1"></div>
-                <div class="blob-shape-2"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="page-section about-section">
-        <div class="bg-shapes">
-            <div class="shape-1"></div>
-            <div class="shape-2"></div>
-            <div class="shape-3"></div>
-        </div>
-
-        <div class="container">
-            <h2 class="section-title slide-in">About <span>Me</span></h2>
-
-            <div class="about-content">
-                <!-- Profile Column -->
-                <div class="profile-column slide-in-left">
-                    <div class="profile-card">
-                        <div class="profile-image-wrapper">
-                            <img src="images/profile.jpg" alt="Nishat Tasnim Nishu" class="profile-img">
-                            <div class="profile-overlay">
-
-                                <div class="color-splashes">
-                                    <div class="splash-1"></div>
-                                    <div class="splash-2"></div>
-                                    <div class="splash-3"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="personal-motto">
-                            <i class="fas fa-quote-left"></i>
-                            <p>"Every pixel tells a story!"</p>
-                            <i class="fas fa-quote-right"></i>
-                        </div>
-
-                        <div class="quick-info">
-                            <div class="info-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Sylhet, Bangladesh</span>
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-graduation-cap"></i>
-                                <span>SUST</span>
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-code"></i>
-                                <span>Flutter & Web</span>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
-                  <div class="cv-btn-container">
-    <a href="https://nishattasnim2021831026cv.netlify.app/" class="view-cv-btn" target="_blank">
-        <i class="fas fa-file-pdf"></i>
-        <span>View My CV</span>
-        <div class="btn-hover-effect"></div>
-    </a>
+<div class="site-bg" aria-hidden="true">
+  <div class="site-bg-grid" id="siteBgGrid"></div>
+  <div class="orb-drift orb-drift-a"><div class="site-bg-orb orb-a" id="orbA"></div></div>
+  <div class="orb-drift orb-drift-b"><div class="site-bg-orb orb-b" id="orbB"></div></div>
+  <div class="orb-drift orb-drift-c"><div class="site-bg-orb orb-c" id="orbC"></div></div>
 </div>
-                </div>
-                <!-- Content Column -->
-                <div class="content-column">
-                    <div class="content-card journey-card slide-in-right">
-                        <h3><i class="fas fa-road icon-mixed"></i> My Journey</h3>
-                        <p>As a dedicated Software Engineering student at SUST, I combine hands-on learning with
-                            creativity to develop practical apps and solutions that solve real problems.</p>
 
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>Starting Out</h4>
-                                    <p>Discovered my interest in technology and began exploring different areas to find
-                                        what truly excites me.</p>
-                                </div>
-                            </div>
+<div class="scroll-progress" aria-hidden="true"><div class="scroll-progress-bar" id="scrollProgressBar"></div></div>
 
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>Skill Expansion</h4>
-                                    <p>Focused on mastering data structures, algorithms, and design principles while
-                                        building web and mobile prototypes.</p>
-                                </div>
-                            </div>
+<a class="skip-link" href="#main">Skip to content</a>
 
-                            <div class="timeline-item">
-                                <div class="timeline-dot"></div>
-                                <div class="timeline-content">
-                                    <h4>Real-World Impact</h4>
-                                    <p>Creating user-centered apps like Trek Mate and SWEHub, blending UI/UX with solid
-                                        code to deliver valuable experiences.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#home" class="brand" aria-label="Nishat Tasnim Nishu, home">
+      <span class="brand-mark">NT</span>
+      <span class="brand-name">Nishat&nbsp;Tasnim</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active-link" data-nav>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>About</a></li>
+        <li><a href="#education" class="nav-link" data-nav>Education</a></li>
+        <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-nav>Projects</a></li>
+        <li><a href="#research" class="nav-link" data-nav>Research</a></li>
+        <li><a href="#journey" class="nav-link" data-nav>Journey</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" aria-pressed="false">
+        <i class="fa-solid fa-moon moon-icon" aria-hidden="true"></i>
+        <i class="fa-solid fa-sun sun-icon" aria-hidden="true"></i>
+      </button>
+      <a class="btn btn-ghost header-github" href="https://github.com/nishatnishu" target="_blank" rel="noopener">
+        <i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero page-section" id="home">
+    <div id="particles-js" class="particles-bg" aria-hidden="true"></div>
+    <div class="hero-grid">
+      <div class="hero-content reveal">
+        <span class="hero-status"><span class="status-dot" aria-hidden="true"></span>Open to opportunities</span>
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">Nishat Tasnim Nishu</h1>
+        <p class="hero-role">
+          <span class="role-text" id="roleText" aria-live="polite"></span><span class="role-cursor" aria-hidden="true"></span>
+        </p>
+        <p class="hero-desc">Software Engineering student passionate about building practical software, exploring intelligent systems, and turning ideas into meaningful digital experiences.</p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" data-nav>View My Projects</a>
+          <a href="#research" class="btn btn-secondary" data-nav>Explore My Research</a>
+          <!-- Replace this href with the actual CV file path, e.g. assets/Nishat_Tasnim_Nishu_CV.pdf, or keep the hosted link below -->
+          <a href="https://nishattasnim2021831026cv.netlify.app/" class="btn btn-ghost" target="_blank" rel="noopener">Download CV <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="hero-links">
+          <a href="https://github.com/nishatnishu" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+          <a href="mailto:nishattasnim5670@gmail.com" aria-label="Send an email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-visual-frame">
+          <div class="hero-photo">
+            <!-- Replace images/profile.jpg with the real photo -->
+            <img src="images/profile.jpg" alt="Nishat Tasnim Nishu" class="hero-photo-img"
+                 onerror="this.remove(); document.getElementById('heroPhotoFallback').style.display='grid';">
+            <span class="hero-photo-initials" id="heroPhotoFallback">NTN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-cue" data-nav aria-label="Scroll to About"><span></span></a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section page-section bg-about" id="about">
+    <div class="section-bg" aria-hidden="true"><span class="bg-shape shape1"></span><span class="bg-shape shape2"></span></div>
+    <div class="section-inner">
+      <p class="section-kicker">About</p>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <p class="about-lead reveal">
+          I'm a Software Engineering student at Shahjalal University of Science and Technology (SUST), Sylhet,
+          interested in full-stack development, mobile applications, algorithms and software design, and
+          machine learning research. I enjoy building practical, working software and studying how intelligent
+          systems can be made more reliable and useful.
+        </p>
+
+        <div class="interest-cards">
+          <div class="interest-card glow-card reveal">
+            <span class="interest-num">01</span>
+            <h3>Software Engineering</h3>
+            <p>Applying data structures, algorithms, design patterns and testing practices to build well-structured software.</p>
+          </div>
+          <div class="interest-card glow-card reveal">
+            <span class="interest-num">02</span>
+            <h3>Full-Stack Development</h3>
+            <p>Building web applications end-to-end with React, Node.js, Express.js and MySQL.</p>
+          </div>
+          <div class="interest-card glow-card reveal">
+            <span class="interest-num">03</span>
+            <h3>Mobile Development</h3>
+            <p>Developing cross-platform applications with Flutter and Dart, backed by Firebase and REST APIs.</p>
+          </div>
+          <div class="interest-card glow-card reveal">
+            <span class="interest-num">04</span>
+            <h3>Machine Learning &amp; Research</h3>
+            <p>Exploring machine learning and NLP through undergraduate research on healthcare and Bangla language data.</p>
+          </div>
+        </div>
+
+        <div class="exploring reveal">
+          <h3 class="exploring-title">Currently Exploring</h3>
+          <ul class="tag-list">
+            <li class="tag">Machine Learning</li>
+            <li class="tag">Deep Learning</li>
+            <li class="tag">NLP</li>
+            <li class="tag">System Design</li>
+            <li class="tag">Software Testing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section page-section bg-education" id="education">
+    <div class="section-bg" aria-hidden="true"><span class="bg-dot d1"></span><span class="bg-dot d2"></span><span class="bg-dot d3"></span><span class="bg-line"></span></div>
+    <div class="section-inner">
+      <p class="section-kicker">Education</p>
+      <h2 class="section-title">Academic Background</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-card glow-card">
+            <div class="timeline-card-head">
+              <h3>B.Sc. in Software Engineering</h3>
+              <span class="timeline-date">February 2023 &ndash; Present</span>
             </div>
+            <p class="timeline-org">Shahjalal University of Science and Technology (SUST)</p>
+
+            <h4 class="coursework-title">Relevant Coursework</h4>
+            <ul class="tag-list coursework-tags">
+              <li class="tag" tabindex="0">Object-Oriented Programming</li>
+              <li class="tag" tabindex="0">Data Structures and Algorithms</li>
+              <li class="tag" tabindex="0">SQL Database</li>
+              <li class="tag" tabindex="0">Number Theory</li>
+              <li class="tag" tabindex="0">Security</li>
+              <li class="tag" tabindex="0">Artificial Intelligence</li>
+              <li class="tag" tabindex="0">Machine Learning</li>
+              <li class="tag" tabindex="0">Web Technologies</li>
+              <li class="tag" tabindex="0">System Design</li>
+            </ul>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Education Section -->
-    <section id="education" class="page-section education-section">
-        <div class="container">
-            <h2 class="section-title slide-in">My <span>Education</span></h2>
+  <!-- ============ SKILLS ============ -->
+  <section class="section page-section bg-skills" id="skills">
+    <div class="section-bg" aria-hidden="true"><span class="bg-grid-soft"></span></div>
+    <div class="section-inner">
+      <p class="section-kicker">Skills</p>
+      <h2 class="section-title">Technical Skills</h2>
 
-            <div class="education-grid">
-                <div class="education-card slide-in-left">
-                    <div class="edu-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <div class="edu-content">
-                        <h3>B.Sc. in Software Engineering</h3>
-                        <p class="institution">Shahjalal University of Science & Technology</p>
-                        <p class="date">2023 - Present</p>
-                        <div class="progress-container">
-                            <div class="progress-track">
-                                <div class="progress-fill" style="width: 65%"></div>
-                            </div>
-                            <span>65% Completed</span>
-                        </div>
-                        <p class="description">Focus on algorithms, software architecture, and full-stack development.
-                            Active participant in coding competitions and tech workshops.</p>
-                    </div>
-                </div>
+      <div class="skills-grid">
+        <div class="skills-category glow-card reveal">
+          <h3><i class="fa-solid fa-code" aria-hidden="true"></i>Programming Languages</h3>
+          <ul class="tag-list">
+            <li class="tag">JavaScript</li><li class="tag">TypeScript</li><li class="tag">Java</li>
+            <li class="tag">C/C++</li><li class="tag">Dart</li><li class="tag">Python</li><li class="tag">SQL</li>
+          </ul>
+        </div>
+        <div class="skills-category glow-card reveal">
+          <h3><i class="fa-solid fa-layer-group" aria-hidden="true"></i>Frameworks &amp; Libraries</h3>
+          <ul class="tag-list">
+            <li class="tag">Node.js</li><li class="tag">Express.js</li><li class="tag">React</li>
+            <li class="tag">Next.js</li><li class="tag">FastAPI</li><li class="tag">Flutter</li>
+            <li class="tag">Tailwind CSS</li><li class="tag">Pandas</li><li class="tag">NumPy</li>
+            <li class="tag">Matplotlib</li><li class="tag">JUnit</li><li class="tag">Selenium</li>
+            <li class="tag">Swing</li><li class="tag">SDL</li>
+          </ul>
+        </div>
+        <div class="skills-category glow-card reveal">
+          <h3><i class="fa-solid fa-toolbox" aria-hidden="true"></i>Tools &amp; Platforms</h3>
+          <ul class="tag-list">
+            <li class="tag">MySQL</li><li class="tag">SQLite</li><li class="tag">Cloudinary</li>
+            <li class="tag">Firebase</li><li class="tag">Git</li><li class="tag">GitHub</li>
+            <li class="tag">Postman</li><li class="tag">Jupyter</li>
+          </ul>
+        </div>
+        <div class="skills-category glow-card reveal">
+          <h3><i class="fa-solid fa-diagram-project" aria-hidden="true"></i>Software Principles</h3>
+          <ul class="tag-list">
+            <li class="tag">Object-Oriented Programming</li><li class="tag">Design Patterns</li>
+            <li class="tag">Software Testing</li><li class="tag">REST APIs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                <div class="education-card slide-in-right">
-                    <div class="edu-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="edu-content">
-                        <h3>Higher Secondary Certificate</h3>
-                        <p class="institution">Govt. Zia Mohila College, Feni</p>
-                        <p class="date">2019 - 2021</p>
-                        <div class="achievement-badge">
-                            <span>GPA 5.00</span>
-                        </div>
-                        <p class="description">Excelled in science subjects while developing foundational programming
-                            skills through self-study and online courses.</p>
-                    </div>
-                </div>
+  <!-- ============ WHAT I BUILD ============ -->
+  <section class="section page-section build-section" id="build">
+    <div class="section-inner">
+      <p class="section-kicker">Focus Areas</p>
+      <h2 class="section-title">What I Build</h2>
 
-                <div class="education-card slide-in-left">
-                    <div class="edu-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <div class="edu-content">
-                        <h3>Online Certifications</h3>
-                        <p class="institution">Various Platforms</p>
-                        <p class="date">Ongoing</p>
-                        <div class="certificate-tags">
-                            <span>Flutter Development</span>
-                            <span>Web Fundamentals</span>
-                            <span>UI/UX Design</span>
-                        </div>
-                        <p class="description">Continuously enhancing my skills through structured online learning
-                            programs from reputable platforms.</p>
-                    </div>
-                </div>
+      <div class="build-grid">
+        <div class="build-card glow-card reveal">
+          <span class="build-num">01</span>
+          <h3>Full-Stack Applications</h3>
+          <p>Building web applications with React, Node.js, Express.js, MySQL and real-time technologies.</p>
+        </div>
+        <div class="build-card glow-card reveal">
+          <span class="build-num">02</span>
+          <h3>Mobile Applications</h3>
+          <p>Building cross-platform applications using Flutter, Dart, Firebase and APIs.</p>
+        </div>
+        <div class="build-card glow-card reveal">
+          <span class="build-num">03</span>
+          <h3>Interactive Software</h3>
+          <p>Exploring game development, real-time systems, rendering, collision detection and OOP.</p>
+        </div>
+        <div class="build-card glow-card reveal">
+          <span class="build-num">04</span>
+          <h3>Intelligent Systems</h3>
+          <p>Exploring machine learning, deep learning, NLP and research-driven computational solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section page-section bg-projects" id="projects">
+    <div class="section-bg" aria-hidden="true"><span class="bg-glow g1"></span><span class="bg-glow g2"></span><span class="bg-trail"></span></div>
+    <div class="section-inner">
+      <p class="section-kicker">Projects</p>
+      <h2 class="section-title">Selected Work</h2>
+
+      <div class="filter-bar" role="tablist" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="full-stack" role="tab" aria-selected="false">Full-Stack</button>
+        <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">Mobile</button>
+        <button class="filter-btn" data-filter="game" role="tab" aria-selected="false">Game Development</button>
+        <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+
+        <article class="project-card glow-card reveal" data-category="full-stack" tabindex="0">
+          <div class="project-visual browser-mockup">
+            <span class="media-dot dot1"></span><span class="media-dot dot2"></span><span class="media-dot dot3"></span>
+            <svg viewBox="0 0 400 190" preserveAspectRatio="xMidYMid slice" role="img" aria-label="TechWeave mentorship platform preview">
+              <rect x="0" y="0" width="400" height="190" style="fill:var(--bg-elevated)"/>
+              <rect x="0" y="0" width="400" height="26" style="fill:var(--bg-surface)"/>
+              <circle cx="16" cy="13" r="4" style="fill:var(--danger)" opacity="0.55"/>
+              <circle cx="30" cy="13" r="4" style="fill:var(--academic)" opacity="0.55"/>
+              <circle cx="44" cy="13" r="4" style="fill:var(--accent)" opacity="0.55"/>
+              <rect x="66" y="7" width="180" height="12" rx="6" style="fill:var(--bg-elevated)"/>
+              <line x1="142" y1="112" x2="258" y2="112" style="stroke:var(--accent);stroke-dasharray:5 5;stroke-width:2" opacity="0.8"/>
+              <circle cx="122" cy="112" r="26" style="fill:var(--accent-dim);stroke:var(--accent);stroke-width:2"/>
+              <circle cx="122" cy="102" r="8" style="fill:var(--accent)" opacity="0.85"/>
+              <path d="M104 122 q18 -14 36 0" style="fill:none;stroke:var(--accent);stroke-width:2" opacity="0.85"/>
+              <circle cx="278" cy="112" r="26" style="fill:var(--academic-dim);stroke:var(--academic);stroke-width:2"/>
+              <circle cx="278" cy="102" r="8" style="fill:var(--academic)" opacity="0.85"/>
+              <path d="M260 122 q18 -14 36 0" style="fill:none;stroke:var(--academic);stroke-width:2" opacity="0.85"/>
+              <rect x="292" y="52" width="66" height="30" rx="10" style="fill:var(--bg-surface);stroke:var(--border-strong);stroke-width:1"/>
+              <line x1="302" y1="63" x2="342" y2="63" style="stroke:var(--text-tertiary);stroke-width:2"/>
+              <line x1="302" y1="72" x2="330" y2="72" style="stroke:var(--text-tertiary);stroke-width:2"/>
+              <rect x="40" y="152" width="320" height="20" rx="10" style="fill:var(--bg-surface)"/>
+              <circle cx="55" cy="162" r="4" style="fill:var(--accent)"/>
+              <line x1="68" y1="162" x2="200" y2="162" style="stroke:var(--text-tertiary);stroke-width:2"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>TechWeave</h3>
+              <span class="project-role">Full-Stack Developer</span>
             </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="page-section skills-section">
-        <div class="container">
-            <h2 class="section-title slide-in">My <span>Skills</span></h2>
-
-            <div class="skills-container">
-                <div class="skills-category slide-in-left">
-                    <h3><i class="fas fa-code"></i> Technical Skills</h3>
-                    <div class="skill-meter">
-                        <div class="meter-item">
-                            <label>Flutter Development</label>
-                            <div class="meter-track">
-                                <div class="meter-fill" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="meter-item">
-                            <label>Web Development</label>
-                            <div class="meter-track">
-                                <div class="meter-fill" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="meter-item">
-                            <label>UI/UX Design</label>
-                            <div class="meter-track">
-                                <div class="meter-fill" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills-category slide-in-right">
-                    <h3><i class="fas fa-brain"></i> Soft Skills</h3>
-                    <div class="skill-meter">
-                        <div class="meter-item">
-                            <label>Problem Solving</label>
-                            <div class="meter-track">
-                                <div class="meter-fill" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="meter-item">
-                            <label>Creativity</label>
-                            <div class="meter-track">
-                                <div class="meter-fill" style="width: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="meter-item">
-                            <label>Team Collaboration</label>
-                            <div class="meter-track">
-                                <div class="meter-fill" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills-tags-container">
-                    <h3><i class="fas fa-tags"></i> Technologies & Tools</h3>
-                    <div class="skill-tags">
-                        <span class="tag tag-1">Flutter</span>
-                        <span class="tag tag-2">Dart</span>
-                        <span class="tag tag-3">Firebase</span>
-                        <span class="tag tag-4">HTML/CSS</span>
-                        <span class="tag tag-5">JavaScript</span>
-                        <span class="tag tag-1">React</span>
-                        <span class="tag tag-2">Node.js</span>
-                        <span class="tag tag-3">Java</span>
-                        <span class="tag tag-4">SDL</span>
-                        <span class="tag tag-5">Figma</span>
-                        <span class="tag tag-1">Git</span>
-                        <span class="tag tag-2">REST APIs</span>
-                    </div>
-                </div>
+            <p>Full-stack mentorship platform for student-mentor collaboration and project discovery.</p>
+            <ul class="tag-list project-tags">
+              <li class="tag">Node.js</li><li class="tag">Express.js</li><li class="tag">MySQL</li>
+              <li class="tag">Socket.IO</li><li class="tag">JWT</li><li class="tag">OAuth2</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-ghost btn-sm" href="https://github.com/nishatnishu/TechWeave_SWE330Project" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+              <button class="btn btn-secondary btn-sm" data-open-project="techweave">View Details</button>
             </div>
-        </div>
-    </section>
+          </div>
+        </article>
 
-    <!-- Projects Section -->
-    <section id="projects" class="page-section portfolio-section">
-        <div class="container">
-            <h2 class="section-title">My <span>Projects</span></h2>
-            <div class="portfolio-grid" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
-                <!-- Snake Game -->
-                <div class="portfolio-item reveal" style="flex: 1 1 250px; max-width: 300px;">
-                    <div class="portfolio-image-container" style="position: relative;">
-                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWg5encwaHl2NWxkdDY3cmdvYzVlMWN6bDZxaDBvMWJlNGMxdnhyNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1oEF7blk8gdFabK22W/giphy.gif"
-                            alt="SDL Snake Game Demo" class="project-gif"
-                            style="width: 100%; height: auto; border-radius: 8px;">
-                        <div class="overlay"
-                            style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); opacity: 0; transition: .3s ease; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                            <a href="https://github.com/nishatnishu/SWE-150_Project" target="_blank"
-                                class="overlay-link" style="color: white; font-size: 24px;"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>Snake Game</h3>
-                    <p>A nostalgic arcade-style game with real-time input handling and pixel-perfect rendering using
-                        SDL.</p>
-                    <div class="project-tags" style="display: flex; gap: 8px; flex-wrap: wrap;"><span
-                            style="background: #f1f1f1; padding: 4px 8px; border-radius: 4px; font-size: 12px;">C++</span><span
-                            style="background: #f1f1f1; padding: 4px 8px; border-radius: 4px; font-size: 12px;">SDL2</span><span
-                            style="background: #f1f1f1; padding: 4px 8px; border-radius: 4px; font-size: 12px;">Game
-                            Dev</span></div>
-                </div>
-
-                <!-- Survivor Game -->
-                <div class="portfolio-item reveal" style="flex: 1 1 250px; max-width: 300px;">
-                    <div class="portfolio-image-container" style="position: relative;">
-                        <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTJvenRxMzh3ODN2M2xlem0yZG5kaHV2dmthOGI0a2N2dmhwaXdzeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YnqLpk5yor9fCeiPrf/giphy.gif"
-                            alt="Survivor Game CLI Demo" class="project-gif"
-                            style="width: 100%; height: auto; border-radius: 8px;">
-                        <div class="overlay"
-                            style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); opacity: 0; transition: .3s ease; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                            <a href="#" target="_blank" class="overlay-link" style="color: white; font-size: 24px;"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>Survivor Game</h3>
-                    <p>A text-based adventure game demonstrating Java OOP mastery and interactive storytelling.</p>
-                    <div class="project-tags" style="display: flex; gap: 8px; flex-wrap: wrap;"><span
-                            style="background: #f1f1f1; padding: 4px 8px; border-radius: 4px; font-size: 12px;">Java</span><span
-                            style="background: #f1f1f1; padding: 4px 8px; border-radius: 4px; font-size: 12px;">OOP</span><span
-                            style="background: #f1f1f1; padding: 4px 8px; border-radius: 4px; font-size: 12px;">CLI
-                            Game</span></div>
-                </div>
-
-                <!-- TrekMate App -->
-                <div class="portfolio-item reveal" style="flex: 1 1 250px; max-width: 300px;">
-                    <div class="portfolio-image-container" style="position: relative;">
-                        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExd281bjJjNjVlZG9idjJ3YTdmbWhjbnd5eDF4NjQ3MHRoMHdocWliMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oEOeajSQrA9fR6e6DN/giphy.gif"
-                            alt="TrekMate App Demo" class="project-gif"
-                            style="width: 100%; height: auto; border-radius: 8px;">
-                        <div class="overlay"
-                            style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); opacity: 0; transition: .3s ease; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                            <a href="https://github.com/nishatnishu/AndroidProject-SWE-250" target="_blank"
-                                class="overlay-link" style="color: white; font-size: 24px;"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>TrekMate (Mobile App)</h3>
-                    <p>A feature-rich travel companion app with personalized recommendations and real-time reviews.</p>
-                    <div class="project-tags" style="display: flex; gap: 8px; flex-wrap: wrap;"><span
-                            style="background: #f1f1f1; padding: 4px 8px; border-radius: 4px; font-size: 12px;">Flutter</span><span
-                            style="background: #f1f1f1; padding: 4px 8px; border-radius: 4px; font-size: 12px;">Firebase</span><span
-                            style="background: #f1f1f1; padding: 4px 8px; border-radius: 4px; font-size: 12px;">REST
-                            API</span></div>
-                </div>
-
-                <!-- Using HTML,CSS & JS Website -->
-                <div class="portfolio-item reveal" style="flex: 1 1 250px; max-width: 300px;">
-                    <div class="portfolio-image-container" style="position: relative;">
-                        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXNnejd4ZXF6dWkyams2bGo2b3VmcGUxd3Y4ZnBwNm1tOGZmeHVxcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/SpopD7IQN2gK3qN4jS/giphy.gif"
-                            alt="Learning-Earning Website Demo" class="project-gif"
-                            style="width: 100%; height: auto; border-radius: 8px;">
-                        <div class="overlay"
-                            style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); opacity: 0; transition: .3s ease; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                            <a href="https://github.com/nishatnishu/Learning-Earning_Website" target="_blank"
-                                class="overlay-link" style="color: white; font-size: 24px;"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <h3>Educational Platfrom(Website)</h3>
-                    <p>An educational platform website built with HTML CSS & JS</p>
-                    <div class="project-tags" style="display: flex; gap: 8px; flex-wrap: wrap;"><span
-                            style="background: #f1f1f1; padding: 4px 8px; border-radius: 4px; font-size: 12px;">HTML</span><span
-                            style="background: #f1f1f1; padding: 4px 8px; border-radius: 4px; font-size: 12px;">CSS</span><span
-                            style="background: #f1f1f1; padding: 4px 8px; border-radius: 4px; font-size: 12px;">JavaScript</span>
-                    </div>
-                </div>
+        <article class="project-card glow-card reveal" data-category="full-stack web ai" tabindex="0">
+          <div class="project-visual browser-mockup">
+            <span class="media-dot dot1"></span><span class="media-dot dot2"></span><span class="media-dot dot3"></span>
+            <svg viewBox="0 0 400 190" preserveAspectRatio="xMidYMid slice" role="img" aria-label="PrepPilot AI interview simulator preview">
+              <rect x="0" y="0" width="400" height="190" style="fill:var(--bg-elevated)"/>
+              <rect x="0" y="0" width="400" height="26" style="fill:var(--bg-surface)"/>
+              <circle cx="16" cy="13" r="4" style="fill:var(--danger)" opacity="0.55"/>
+              <circle cx="30" cy="13" r="4" style="fill:var(--academic)" opacity="0.55"/>
+              <circle cx="44" cy="13" r="4" style="fill:var(--accent)" opacity="0.55"/>
+              <rect x="66" y="7" width="180" height="12" rx="6" style="fill:var(--bg-elevated)"/>
+              <rect x="24" y="44" width="352" height="40" rx="10" style="fill:var(--bg-surface);stroke:var(--border-subtle)"/>
+              <circle cx="46" cy="64" r="12" style="fill:var(--accent-dim)"/>
+              <path d="M40 64 l4 4 l8 -9" style="fill:none;stroke:var(--accent);stroke-width:2"/>
+              <line x1="68" y1="58" x2="300" y2="58" style="stroke:var(--text-tertiary);stroke-width:2"/>
+              <line x1="68" y1="70" x2="230" y2="70" style="stroke:var(--text-tertiary);stroke-width:2"/>
+              <rect x="24" y="96" width="168" height="76" rx="10" style="fill:var(--bg-surface);stroke:var(--border-subtle)"/>
+              <text x="38" y="116" style="fill:var(--text-tertiary);font-size:10px;font-family:'Space Grotesk',sans-serif">Difficulty</text>
+              <rect x="38" y="126" width="140" height="8" rx="4" style="fill:var(--border-subtle)"/>
+              <rect x="38" y="126" width="92" height="8" rx="4" style="fill:var(--accent)"/>
+              <text x="38" y="150" style="fill:var(--text-tertiary);font-size:10px;font-family:'Space Grotesk',sans-serif">Score Trend</text>
+              <path d="M38 168 L64 156 L90 162 L116 144 L142 150 L168 132" style="fill:none;stroke:var(--academic);stroke-width:2"/>
+              <rect x="208" y="96" width="168" height="76" rx="10" style="fill:var(--bg-surface);stroke:var(--border-subtle)"/>
+              <circle cx="292" cy="134" r="26" style="fill:none;stroke:var(--accent);stroke-width:6;opacity:0.9" stroke-dasharray="120 43"/>
+              <text x="292" y="139" text-anchor="middle" style="fill:var(--accent);font-size:13px;font-family:'Space Grotesk',sans-serif;font-weight:700">73%</text>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>PrepPilot</h3>
+              <span class="project-role">AI Full-Stack Developer</span>
             </div>
-        </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact" class="page-section contact-section">
-        <div class="container">
-            <h2 class="section-title">Get In <span>Touch</span></h2>
-            <p class="contact-intro reveal" data-delay="0.1s">
-                I'm actively seeking internship opportunities and collaborations on exciting projects. Feel free to
-                reach out to me!
-            </p>
-
-            <form id="contact-form" class="contact-form reveal" data-delay="0.2s">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required placeholder="Your Name">
-                    <div class="focus-line"></div>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required placeholder="Your Email">
-                    <div class="focus-line"></div>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="6" required placeholder="Your Message"></textarea>
-                    <div class="focus-line"></div>
-                </div>
-                <button type="submit" class="btn btn-primary pulse-on-hover">
-                    <span class="btn-text">Send Message</span>
-                    <span class="btn-icon">
-                        <i class="fas fa-paper-plane"></i>
-                    </span>
-                </button>
-                <div id="form-message" class="form-message"></div>
-            </form>
-
-            <div class="contact-info-blocks">
-                <div class="info-block reveal-left" data-delay="0.3s">
-                    <div class="info-icon">
-                        <i class="fas fa-phone icon-gradient"></i>
-                    </div>
-                    <p>+880 1619517814</p>
-                    <div class="info-underline"></div>
-                </div>
-                <div class="info-block reveal" data-delay="0.4s">
-                    <div class="info-icon">
-                        <i class="fas fa-envelope icon-gradient"></i>
-                    </div>
-                    <p>nishattasnim5670@gmail.com</p>
-                    <div class="info-underline"></div>
-                </div>
-                <div class="info-block reveal-right" data-delay="0.5s">
-                    <div class="info-icon">
-                        <i class="fas fa-map-marker-alt icon-gradient"></i>
-                    </div>
-                    <p>Sylhet, Bangladesh</p>
-                    <div class="info-underline"></div>
-                </div>
-                <div class="info-block reveal" data-delay="0.6s">
-                    <div class="info-icon">
-                        <i class="fab fa-github icon-gradient"></i>
-                    </div>
-                    <p><a href="https://github.com/nishatnishu" target="_blank">github.com/nishatnishu</a></p>
-                    <div class="info-underline"></div>
-                </div>
+            <p>Adaptive, time-constrained AI interview simulator running dynamic technical and behavioral evaluations.</p>
+            <ul class="tag-list project-tags">
+              <li class="tag">Next.js</li><li class="tag">TypeScript</li><li class="tag">FastAPI</li>
+              <li class="tag">Python</li><li class="tag">LLM API</li><li class="tag">SQLite</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-ghost btn-sm" href="https://github.com/nishatnishu" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+              <button class="btn btn-secondary btn-sm" data-open-project="preppilot">View Details</button>
             </div>
+          </div>
+        </article>
+
+        <article class="project-card glow-card reveal" data-category="full-stack web" tabindex="0">
+          <div class="project-visual browser-mockup">
+            <span class="media-dot dot1"></span><span class="media-dot dot2"></span><span class="media-dot dot3"></span>
+            <svg viewBox="0 0 400 190" preserveAspectRatio="xMidYMid slice" role="img" aria-label="SWEHub study platform preview">
+              <rect x="0" y="0" width="400" height="190" style="fill:var(--bg-elevated)"/>
+              <rect x="0" y="0" width="400" height="26" style="fill:var(--bg-surface)"/>
+              <circle cx="16" cy="13" r="4" style="fill:var(--danger)" opacity="0.55"/>
+              <circle cx="30" cy="13" r="4" style="fill:var(--academic)" opacity="0.55"/>
+              <circle cx="44" cy="13" r="4" style="fill:var(--accent)" opacity="0.55"/>
+              <rect x="66" y="7" width="180" height="12" rx="6" style="fill:var(--bg-elevated)"/>
+              <rect x="0" y="26" width="92" height="164" style="fill:var(--bg-surface)"/>
+              <rect x="18" y="46" width="56" height="10" rx="5" style="fill:var(--accent-dim)"/>
+              <rect x="18" y="68" width="56" height="8" rx="4" style="fill:var(--border-strong)"/>
+              <rect x="18" y="86" width="56" height="8" rx="4" style="fill:var(--border-strong)"/>
+              <rect x="18" y="104" width="56" height="8" rx="4" style="fill:var(--border-strong)"/>
+              <g>
+                <rect x="112" y="46" width="266" height="34" rx="8" style="fill:var(--bg-surface);stroke:var(--border-subtle)"/>
+                <rect x="126" y="58" width="16" height="12" rx="2" style="fill:var(--accent)" opacity="0.8"/>
+                <line x1="152" y1="60" x2="280" y2="60" style="stroke:var(--text-tertiary);stroke-width:2"/>
+                <line x1="152" y1="70" x2="230" y2="70" style="stroke:var(--text-tertiary);stroke-width:2"/>
+              </g>
+              <g>
+                <rect x="112" y="90" width="266" height="34" rx="8" style="fill:var(--bg-surface);stroke:var(--border-subtle)"/>
+                <rect x="126" y="102" width="16" height="12" rx="2" style="fill:var(--academic)" opacity="0.8"/>
+                <line x1="152" y1="104" x2="290" y2="104" style="stroke:var(--text-tertiary);stroke-width:2"/>
+                <line x1="152" y1="114" x2="240" y2="114" style="stroke:var(--text-tertiary);stroke-width:2"/>
+              </g>
+              <g>
+                <rect x="112" y="134" width="266" height="34" rx="8" style="fill:var(--bg-surface);stroke:var(--border-subtle)"/>
+                <rect x="126" y="146" width="16" height="12" rx="2" style="fill:var(--accent)" opacity="0.8"/>
+                <line x1="152" y1="148" x2="270" y2="148" style="stroke:var(--text-tertiary);stroke-width:2"/>
+                <line x1="152" y1="158" x2="220" y2="158" style="stroke:var(--text-tertiary);stroke-width:2"/>
+              </g>
+              <rect x="336" y="46" width="42" height="18" rx="9" style="fill:var(--accent)" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>SWEHub</h3>
+              <span class="project-role">Full-Stack Developer</span>
+            </div>
+            <p>Software engineering platform for study materials and submission management.</p>
+            <ul class="tag-list project-tags">
+              <li class="tag">React</li><li class="tag">Vite</li><li class="tag">Node.js</li><li class="tag">MySQL</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-ghost btn-sm" href="https://github.com/nishatnishu/SWEHUB_350Project" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+              <button class="btn btn-secondary btn-sm" data-open-project="swehub">View Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glow-card reveal" data-category="mobile" tabindex="0">
+          <div class="project-visual device-mockup">
+            <span class="media-dot dot1"></span><span class="media-dot dot2"></span><span class="media-dot dot3"></span>
+            <svg viewBox="0 0 400 190" preserveAspectRatio="xMidYMid slice" role="img" aria-label="TrekMate travel app preview">
+              <rect x="0" y="0" width="400" height="190" style="fill:var(--bg-elevated)"/>
+              <circle cx="120" cy="60" r="70" style="fill:var(--accent-dim)" opacity="0.5"/>
+              <circle cx="300" cy="140" r="60" style="fill:var(--academic-dim)" opacity="0.5"/>
+              <rect x="150" y="12" width="100" height="166" rx="18" style="fill:var(--bg-surface);stroke:var(--border-strong);stroke-width:2"/>
+              <rect x="158" y="24" width="84" height="142" rx="9" style="fill:var(--bg-elevated)"/>
+              <rect x="188" y="16" width="24" height="5" rx="2.5" style="fill:var(--border-strong)"/>
+              <path d="M158 118 L182 84 L198 104 L214 76 L242 118 Z" style="fill:var(--accent-dim)"/>
+              <path d="M158 122 L192 96 L214 116 L242 122 Z" style="fill:var(--academic-dim)"/>
+              <path d="M200 60 c0 12 -14 18 -14 30 c0 8 6 14 14 14 s14 -6 14 -14 c0 -12 -14 -18 -14 -30 z" style="fill:var(--accent)"/>
+              <circle cx="200" cy="72" r="4" style="fill:var(--bg-elevated)"/>
+              <path d="M172 150 q14 -18 28 -4 q14 14 28 -6" style="fill:none;stroke:var(--academic);stroke-width:2;stroke-dasharray:3 4"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>TrekMate</h3>
+              <span class="project-role">Mobile App Developer</span>
+            </div>
+            <p>Cross-platform travel companion application for exploring destinations and trip guides.</p>
+            <ul class="tag-list project-tags">
+              <li class="tag">Flutter</li><li class="tag">Dart</li><li class="tag">Firebase</li>
+              <li class="tag">Google Maps API</li><li class="tag">Provider</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-ghost btn-sm" href="https://github.com/nishatnishu/AndroidProject-SWE-250" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+              <button class="btn btn-secondary btn-sm" data-open-project="trekmate">View Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glow-card reveal" data-category="game" tabindex="0">
+          <div class="project-visual game-mockup">
+            <span class="media-dot dot1"></span><span class="media-dot dot2"></span><span class="media-dot dot3"></span>
+            <svg viewBox="0 0 400 190" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Survivor Game preview">
+              <rect x="0" y="0" width="400" height="190" style="fill:var(--bg-elevated)"/>
+              <g opacity="0.35">
+                <line x1="0" y1="30" x2="400" y2="30" style="stroke:var(--border-subtle)"/>
+                <line x1="0" y1="70" x2="400" y2="70" style="stroke:var(--border-subtle)"/>
+                <line x1="0" y1="110" x2="400" y2="110" style="stroke:var(--border-subtle)"/>
+                <line x1="0" y1="150" x2="400" y2="150" style="stroke:var(--border-subtle)"/>
+                <line x1="80" y1="0" x2="80" y2="190" style="stroke:var(--border-subtle)"/>
+                <line x1="200" y1="0" x2="200" y2="190" style="stroke:var(--border-subtle)"/>
+                <line x1="320" y1="0" x2="320" y2="190" style="stroke:var(--border-subtle)"/>
+              </g>
+              <rect x="16" y="14" width="90" height="12" rx="6" style="fill:var(--bg-surface);stroke:var(--border-strong)"/>
+              <rect x="19" y="17" width="60" height="6" rx="3" style="fill:var(--danger)" opacity="0.85"/>
+              <rect x="300" y="14" width="84" height="16" rx="4" style="fill:var(--bg-surface);stroke:var(--border-subtle)"/>
+              <circle cx="200" cy="105" r="14" style="fill:var(--accent)"/>
+              <circle cx="200" cy="105" r="22" style="fill:none;stroke:var(--accent);stroke-width:1.5;opacity:0.5"/>
+              <circle cx="120" cy="60" r="8" style="fill:var(--danger)" opacity="0.9"/>
+              <circle cx="290" cy="70" r="8" style="fill:var(--danger)" opacity="0.9"/>
+              <circle cx="260" cy="150" r="8" style="fill:var(--danger)" opacity="0.9"/>
+              <circle cx="100" cy="150" r="8" style="fill:var(--danger)" opacity="0.9"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Survivor Game</h3>
+              <span class="project-role">Game Developer</span>
+            </div>
+            <p>2D top-down action survival game with dynamic enemy spawning and health tracking.</p>
+            <ul class="tag-list project-tags">
+              <li class="tag">Java</li><li class="tag">Java Swing</li><li class="tag">Java AWT</li><li class="tag">OOP</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-ghost btn-sm" href="https://github.com/nishatnishu/Survivor_Grame_Java_Project" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+              <button class="btn btn-secondary btn-sm" data-open-project="survivor">View Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glow-card reveal" data-category="game" tabindex="0">
+          <div class="project-visual game-mockup">
+            <span class="media-dot dot1"></span><span class="media-dot dot2"></span><span class="media-dot dot3"></span>
+            <svg viewBox="0 0 400 190" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Snake Game preview">
+              <rect x="0" y="0" width="400" height="190" style="fill:var(--bg-elevated)"/>
+              <g opacity="0.35">
+                <line x1="0" y1="30" x2="400" y2="30" style="stroke:var(--border-subtle)"/>
+                <line x1="0" y1="70" x2="400" y2="70" style="stroke:var(--border-subtle)"/>
+                <line x1="0" y1="110" x2="400" y2="110" style="stroke:var(--border-subtle)"/>
+                <line x1="0" y1="150" x2="400" y2="150" style="stroke:var(--border-subtle)"/>
+                <line x1="80" y1="0" x2="80" y2="190" style="stroke:var(--border-subtle)"/>
+                <line x1="200" y1="0" x2="200" y2="190" style="stroke:var(--border-subtle)"/>
+                <line x1="320" y1="0" x2="320" y2="190" style="stroke:var(--border-subtle)"/>
+              </g>
+              <rect x="16" y="14" width="70" height="16" rx="4" style="fill:var(--bg-surface);stroke:var(--border-subtle)"/>
+              <rect x="120" y="90" width="24" height="24" rx="5" style="fill:var(--accent)"/>
+              <rect x="144" y="90" width="24" height="24" rx="5" style="fill:var(--accent)" opacity="0.85"/>
+              <rect x="168" y="90" width="24" height="24" rx="5" style="fill:var(--accent)" opacity="0.7"/>
+              <rect x="168" y="66" width="24" height="24" rx="5" style="fill:var(--accent)" opacity="0.55"/>
+              <rect x="168" y="42" width="24" height="24" rx="5" style="fill:var(--accent)" opacity="0.4"/>
+              <circle cx="270" cy="102" r="8" style="fill:var(--academic)"/>
+              <circle cx="270" cy="102" r="14" style="fill:none;stroke:var(--academic);stroke-width:1.5;opacity:0.5"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Snake Game</h3>
+              <span class="project-role">C++ Developer</span>
+            </div>
+            <p>2D desktop Snake game enhanced with moving obstacles, bonus food timing, and screen wrap-around.</p>
+            <ul class="tag-list project-tags">
+              <li class="tag">C++</li><li class="tag">SDL2</li><li class="tag">SDL2_ttf</li><li class="tag">C++ STL</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-ghost btn-sm" href="https://github.com/nishatnishu/Snake_Game_SWE-150_Project" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+              <button class="btn btn-secondary btn-sm" data-open-project="snake">View Details</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glow-card reveal" data-category="web" tabindex="0">
+          <div class="project-visual browser-mockup">
+            <span class="media-dot dot1"></span><span class="media-dot dot2"></span><span class="media-dot dot3"></span>
+            <svg viewBox="0 0 400 190" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Learning-Earning Website preview">
+              <rect x="0" y="0" width="400" height="190" style="fill:var(--bg-elevated)"/>
+              <rect x="0" y="0" width="400" height="26" style="fill:var(--bg-surface)"/>
+              <circle cx="16" cy="13" r="4" style="fill:var(--danger)" opacity="0.55"/>
+              <circle cx="30" cy="13" r="4" style="fill:var(--academic)" opacity="0.55"/>
+              <circle cx="44" cy="13" r="4" style="fill:var(--accent)" opacity="0.55"/>
+              <rect x="66" y="7" width="180" height="12" rx="6" style="fill:var(--bg-elevated)"/>
+              <rect x="24" y="44" width="160" height="46" rx="10" style="fill:var(--bg-surface);stroke:var(--border-subtle)"/>
+              <circle cx="46" cy="67" r="14" style="fill:var(--academic-dim)"/>
+              <text x="46" y="72" text-anchor="middle" style="fill:var(--academic);font-size:13px;font-family:'Space Grotesk',sans-serif;font-weight:700">$</text>
+              <line x1="72" y1="60" x2="164" y2="60" style="stroke:var(--text-tertiary);stroke-width:2"/>
+              <line x1="72" y1="72" x2="140" y2="72" style="stroke:var(--text-tertiary);stroke-width:2"/>
+              <rect x="200" y="44" width="176" height="46" rx="10" style="fill:var(--bg-surface);stroke:var(--border-subtle)"/>
+              <rect x="216" y="58" width="10" height="18" style="fill:var(--accent)" opacity="0.5"/>
+              <rect x="230" y="52" width="10" height="24" style="fill:var(--accent)" opacity="0.7"/>
+              <rect x="244" y="62" width="10" height="14" style="fill:var(--accent)" opacity="0.5"/>
+              <rect x="258" y="48" width="10" height="28" style="fill:var(--accent)" opacity="0.9"/>
+              <line x1="284" y1="60" x2="360" y2="60" style="stroke:var(--text-tertiary);stroke-width:2"/>
+              <line x1="284" y1="72" x2="330" y2="72" style="stroke:var(--text-tertiary);stroke-width:2"/>
+              <g>
+                <rect x="24" y="108" width="104" height="66" rx="8" style="fill:var(--bg-surface);stroke:var(--border-subtle)"/>
+                <rect x="24" y="108" width="104" height="40" rx="8" style="fill:var(--accent-dim)"/>
+                <path d="M66 122 l14 8 l-14 8 z" style="fill:var(--accent)"/>
+                <line x1="34" y1="160" x2="100" y2="160" style="stroke:var(--text-tertiary);stroke-width:2"/>
+              </g>
+              <g>
+                <rect x="148" y="108" width="104" height="66" rx="8" style="fill:var(--bg-surface);stroke:var(--border-subtle)"/>
+                <rect x="148" y="108" width="104" height="40" rx="8" style="fill:var(--academic-dim)"/>
+                <path d="M190 122 l14 8 l-14 8 z" style="fill:var(--academic)"/>
+                <line x1="158" y1="160" x2="224" y2="160" style="stroke:var(--text-tertiary);stroke-width:2"/>
+              </g>
+              <g>
+                <rect x="272" y="108" width="104" height="66" rx="8" style="fill:var(--bg-surface);stroke:var(--border-subtle)"/>
+                <rect x="272" y="108" width="104" height="40" rx="8" style="fill:var(--accent-dim)"/>
+                <path d="M314 122 l14 8 l-14 8 z" style="fill:var(--accent)"/>
+                <line x1="282" y1="160" x2="348" y2="160" style="stroke:var(--text-tertiary);stroke-width:2"/>
+              </g>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-head">
+              <h3>Learning-Earning Website</h3>
+              <span class="project-role">Web Developer</span>
+            </div>
+            <p>Educational platform for browsing courses and tracking learning progress.</p>
+            <ul class="tag-list project-tags">
+              <li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-ghost btn-sm" href="https://github.com/nishatnishu/Learning-Earning_Website" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+              <button class="btn btn-secondary btn-sm" data-open-project="learning-earning">View Details</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESEARCH ============ -->
+  <section class="section page-section research-section" id="research">
+    <div class="section-inner">
+      <p class="section-kicker">Research</p>
+      <h2 class="section-title research-title">Research &amp; Exploration</h2>
+      <p class="section-subtitle">Exploring intelligent systems, machine learning, and language technologies.</p>
+
+      <div class="research-grid">
+        <article class="research-card glow-card reveal">
+          <div class="research-card-top">
+            <span class="research-icon" aria-hidden="true"><i class="fa-solid fa-file-lines"></i></span>
+            <span class="research-badge status-review">Under Review &mdash; PLOS</span>
+          </div>
+          <p class="research-category">Machine Learning &amp; Healthcare</p>
+          <h3 class="research-name">HeartRank</h3>
+          <p class="research-paper-title">&ldquo;An Empirical Framework for Cost- and Efficiency-Aware Heart Disease Prediction Using Machine Learning, Deep Learning and Quantum Based Algorithms.&rdquo;</p>
+          <p class="research-focus"><strong>Research Focus &mdash;</strong> Empirical comparison of machine learning, deep learning, and quantum models for heart disease prediction with emphasis on performance and cost-aware model selection.</p>
+          <p class="research-role"><i class="fa-solid fa-user-graduate" aria-hidden="true"></i> Undergraduate Researcher</p>
+        </article>
+
+        <article class="research-card glow-card reveal">
+          <div class="research-card-top">
+            <span class="research-icon" aria-hidden="true"><i class="fa-solid fa-language"></i></span>
+            <span class="research-badge status-review">Submitted &mdash; WAT 2027</span>
+          </div>
+          <p class="research-category">Bangla NLP &amp; Social Computing</p>
+          <h3 class="research-name">PoWoBD</h3>
+          <p class="research-paper-title">&ldquo;A Bangla Dataset and Ensemble Transformer Framework for Political Barriers Classification Against Women in Bangladesh.&rdquo;</p>
+          <p class="research-focus"><strong>Research Focus &mdash;</strong> Constructed a Bangla dataset and ensemble transformer pipeline to classify political barriers facing women in Bangladesh.</p>
+          <p class="research-role"><i class="fa-solid fa-user-graduate" aria-hidden="true"></i> Researcher</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JOURNEY ============ -->
+  <section class="section page-section" id="journey">
+    <div class="section-inner">
+      <p class="section-kicker">Journey</p>
+      <h2 class="section-title">My Development Journey</h2>
+
+      <div class="journey-line" role="list">
+        <div class="journey-item reveal" role="listitem">
+          <div class="journey-dot" aria-hidden="true"></div>
+          <p>Started exploring programming and software development</p>
         </div>
-    </section>
-    <!-- Custom Modal for Alerts -->
-    <div id="custom-modal" class="custom-modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <p id="modal-message"></p>
-            <button class="btn btn-primary" id="modal-ok-button">OK</button>
+        <div class="journey-item reveal" role="listitem">
+          <div class="journey-dot" aria-hidden="true"></div>
+          <p>Built projects while studying Software Engineering</p>
         </div>
+        <div class="journey-item reveal" role="listitem">
+          <div class="journey-dot" aria-hidden="true"></div>
+          <p>Expanded into web and mobile development</p>
+        </div>
+        <div class="journey-item reveal" role="listitem">
+          <div class="journey-dot" aria-hidden="true"></div>
+          <p>Explored game development</p>
+        </div>
+        <div class="journey-item reveal" role="listitem">
+          <div class="journey-dot" aria-hidden="true"></div>
+          <p>Began machine learning research</p>
+        </div>
+        <div class="journey-item reveal current" role="listitem">
+          <div class="journey-dot" aria-hidden="true"></div>
+          <p>Currently developing skills across software engineering and intelligent systems</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HIGHLIGHTS ============ -->
+  <section class="section page-section highlights-section" id="highlights">
+    <div class="section-inner">
+      <p class="section-kicker">Highlights</p>
+      <h2 class="section-title">At a Glance</h2>
+
+      <div class="highlights-grid">
+        <div class="highlight-card glow-card reveal">
+          <span class="highlight-value">SUST</span>
+          <span class="highlight-label">Software Engineering Student</span>
+        </div>
+        <div class="highlight-card glow-card reveal">
+          <span class="highlight-value counter" data-target="7">0</span>
+          <span class="highlight-label">Technical Projects</span>
+        </div>
+        <div class="highlight-card glow-card reveal">
+          <span class="highlight-value counter" data-target="2">0</span>
+          <span class="highlight-label">Research Projects</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GITHUB ============ -->
+  <section class="section page-section github-section" id="github">
+    <div class="section-inner">
+      <div class="github-panel glow-card reveal">
+        <div class="github-panel-text">
+          <p class="section-kicker">Code Repository</p>
+          <h2 class="section-title">Code, Build, Learn.</h2>
+          <p>Every project shown here is open source. Explore the source code directly on GitHub.</p>
+          <a class="btn btn-primary" href="https://github.com/nishatnishu" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github" aria-hidden="true"></i> Visit GitHub Profile
+          </a>
+        </div>
+        <ul class="repo-list">
+          <li><a href="https://github.com/nishatnishu/TechWeave_SWE330Project" target="_blank" rel="noopener"><i class="fa-solid fa-code-branch" aria-hidden="true"></i>TechWeave_SWE330Project</a></li>
+          <li><a href="https://github.com/nishatnishu/SWEHUB_350Project" target="_blank" rel="noopener"><i class="fa-solid fa-code-branch" aria-hidden="true"></i>SWEHUB_350Project</a></li>
+          <li><a href="https://github.com/nishatnishu/AndroidProject-SWE-250" target="_blank" rel="noopener"><i class="fa-solid fa-code-branch" aria-hidden="true"></i>AndroidProject-SWE-250</a></li>
+          <li><a href="https://github.com/nishatnishu/Survivor_Grame_Java_Project" target="_blank" rel="noopener"><i class="fa-solid fa-code-branch" aria-hidden="true"></i>Survivor_Grame_Java_Project</a></li>
+          <li><a href="https://github.com/nishatnishu/Snake_Game_SWE-150_Project" target="_blank" rel="noopener"><i class="fa-solid fa-code-branch" aria-hidden="true"></i>Snake_Game_SWE-150_Project</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section page-section bg-contact" id="contact">
+    <div class="section-bg" aria-hidden="true"><span class="bg-shape shape1"></span></div>
+    <div class="section-inner">
+      <p class="section-kicker">Contact</p>
+      <h2 class="section-title">Let&rsquo;s Build Something Together.</h2>
+      <p class="section-subtitle contact-subtitle">I&rsquo;m always interested in learning, building meaningful software, and connecting with people working on interesting ideas.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a class="contact-line" href="mailto:nishattasnim5670@gmail.com">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span>nishattasnim5670@gmail.com</span>
+          </a>
+          <div class="contact-line">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Sylhet, Bangladesh</span>
+          </div>
+          <a class="contact-line" href="https://github.com/nishatnishu" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            <span>github.com/nishatnishu</span>
+          </a>
+        </div>
+
+        <form class="contact-form glow-card reveal" id="contactForm" novalidate>
+          <p class="form-note">This form works entirely in your browser and isn&rsquo;t connected to an email service yet &mdash; please reach out directly via email above for now.</p>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">NT</span>
+      <div>
+        <p class="footer-name">Nishat Tasnim Nishu</p>
+        <p class="footer-role">Software Engineering Student</p>
+      </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
-</body>
+    <ul class="footer-links">
+      <li><a href="https://github.com/nishatnishu" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:nishattasnim5670@gmail.com">Email</a></li>
+      <li><a href="https://nishattasnim2021831026cv.netlify.app/" target="_blank" rel="noopener">CV</a></li>
+    </ul>
 
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#home" data-nav>Home</a>
+      <a href="#about" data-nav>About</a>
+      <a href="#projects" data-nav>Projects</a>
+      <a href="#research" data-nav>Research</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="currentYear"></span> Nishat Tasnim Nishu. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<!-- Project Detail Modal -->
+<div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-panel">
+    <button class="modal-close" id="modalClose" aria-label="Close project details"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    <div class="modal-body" id="modalBody">
+      <!-- populated by JS -->
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+</body>
 </html>
